@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+}
+
+header {
+    padding: 10px 10px 10px 50px;
+    color: aqua;
+    background-color: gray;
+    font-weight: bold;
+}
+
+.input-container {
+    background-image: url('nix.png');
+    background-size: 56px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 5px 5px 10px darkgray;
+}
+
+#task-input {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#add-btn {
+    padding: 5px 10px;
+    background-color: slategray;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#add-btn:hover {
+    background-color: lightslategray;
+}
+
+ul {
+    list-style: none;
+    padding: 0 30px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px darkgray;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    padding: 5px 8px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: lightpink;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
