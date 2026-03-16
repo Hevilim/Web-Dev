@@ -1,10 +1,6 @@
-<!-- product-card.component.html -->
-
 <div class="product-card">
   <a [href]="product.link" target="_blank" rel="noopener noreferrer" class="product-link">
-    <!-- Image Gallery Section -->
     <div class="product-image-wrapper">
-      <!-- Main Image with Zoom Icon -->
       <div class="main-image-container">
         <img 
           [src]="selectedImage" 
@@ -21,7 +17,6 @@
         </div>
       </div>
 
-      <!-- Gallery Navigation Arrows -->
       <button 
         class="gallery-arrow prev" 
         (click)="navigateGallery('prev', $event)"
@@ -43,7 +38,6 @@
         </svg>
       </button>
 
-      <!-- Thumbnail Gallery -->
       <div class="thumbnail-gallery" *ngIf="product.images.length > 1">
         <div 
           *ngFor="let image of product.images; let i = index" 
@@ -77,7 +71,6 @@
       <img src="https://kaspi.kz/img/kaspi_logo.svg" alt="Kaspi.kz" class="kaspi-logo">
     </div>
 
-    <!-- Share Button -->
     <div class="share-container">
       <button 
         class="share-button" 
@@ -93,7 +86,6 @@
         </svg>
       </button>
 
-      <!-- Share Dropdown -->
       <div class="share-dropdown" [class.show]="shareDropdownOpen">
         <button 
           class="share-option whatsapp" 
